@@ -1,0 +1,450 @@
+{
+	"info": {
+		"_postman_id": "afa532e7-1505-4a52-90c6-9c4731285d56",
+		"name": "SchoolCenter",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37956962"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "RegisterStudent",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Emilio Hernandez",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "ehernandez@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Asada.2024",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2636/v1/user/register/student",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"v1",
+								"user",
+								"register",
+								"student"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RegisterTeacher",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Sergio Hernandez",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "shernandez@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Asada.2024",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2636/v1/user/register/teacher",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"v1",
+								"user",
+								"register",
+								"teacher"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "ehernandez@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Asada.2024",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2636/v1/user/login",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"v1",
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Curse",
+			"item": [
+				{
+					"name": "Create Curse",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2E5MWRiMzdkYzg5MDQzYTM0MGQyYmQiLCJuYW1lIjoiU2VyZ2lvIEhlcm5hbmRleiIsInJvbGUiOiJURUFDSEVSX1JPTEUiLCJpYXQiOjE3MzkxNjU2NjUsImV4cCI6MTczOTE3NjQ2NX0.RgTQjPHV1eB6jmNlDq8soJRUP29uieq3pgFuwuAsmrQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "ssss",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "agfdhgfkjgjhjh",
+									"type": "text"
+								},
+								{
+									"key": "teacherId",
+									"value": "67a90fd67dc89043a340d2b9",
+									"type": "text"
+								},
+								{
+									"key": "students",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2636/v1/curse/create",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"v1",
+								"curse",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Curse",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2E5MWRiMzdkYzg5MDQzYTM0MGQyYmQiLCJuYW1lIjoiU2VyZ2lvIEhlcm5hbmRleiIsInJvbGUiOiJURUFDSEVSX1JPTEUiLCJpYXQiOjE3MzkxNTExNjQsImV4cCI6MTczOTE2MTk2NH0.IhRfHDNw_2L9nBEL9C339c2DV0LBO5TYYLxLoiKtBuY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "NAturales",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "agfdhgfkjgjhjh",
+									"type": "text"
+								},
+								{
+									"key": "teacherId",
+									"value": "67a90fd67dc89043a340d2b9",
+									"type": "text"
+								},
+								{
+									"key": "students",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2636/v1/curse/update/67a9628e6c34277e6999f6bf",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"v1",
+								"curse",
+								"update",
+								"67a9628e6c34277e6999f6bf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Curse",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2E5MWRiMzdkYzg5MDQzYTM0MGQyYmQiLCJuYW1lIjoiU2VyZ2lvIEhlcm5hbmRleiIsInJvbGUiOiJURUFDSEVSX1JPTEUiLCJpYXQiOjE3MzkxNjU2NjUsImV4cCI6MTczOTE3NjQ2NX0.RgTQjPHV1eB6jmNlDq8soJRUP29uieq3pgFuwuAsmrQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "localhost:2636/v1/curse/delete/67a98ffac9c02c1d073af6d0",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"v1",
+								"curse",
+								"delete",
+								"67a98ffac9c02c1d073af6d0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Curses",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2E5MWRiMzdkYzg5MDQzYTM0MGQyYmQiLCJuYW1lIjoiU2VyZ2lvIEhlcm5hbmRleiIsInJvbGUiOiJURUFDSEVSX1JPTEUiLCJpYXQiOjE3MzkxNTUyODAsImV4cCI6MTczOTE2NjA4MH0.H2ZJeZbvivqr8X8JEIkGxH8721JNzwXgwoT3vC4ffX0",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:2636/v1/curse/get",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"v1",
+								"curse",
+								"get"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Enrollment",
+			"item": [
+				{
+					"name": "Register in a curse",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2E5ODVjZTQ2NmQ5MzI3MzJjMzMyOWIiLCJuYW1lIjoiRW1pbGlvIEhlcm5hbmRleiIsInJvbGUiOiJTVFVERU5UX1JPTEUiLCJpYXQiOjE3MzkxNjMyMTAsImV4cCI6MTczOTE3NDAxMH0.FRCUbhOR9-yEEPsWAzl5LFTkzOXMQIOZc8YGnRZUQWQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "studentId",
+									"value": "67a985ce466d932732c3329b",
+									"type": "text"
+								},
+								{
+									"key": "courseId",
+									"value": "67a99013c9c02c1d073af6d2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2636/v1/enrollment/register",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"v1",
+								"enrollment",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetCurses Student",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2E5ODVjZTQ2NmQ5MzI3MzJjMzMyOWIiLCJuYW1lIjoiRW1pbGlvIEhlcm5hbmRleiIsInJvbGUiOiJTVFVERU5UX1JPTEUiLCJpYXQiOjE3MzkxNjMyMTAsImV4cCI6MTczOTE3NDAxMH0.FRCUbhOR9-yEEPsWAzl5LFTkzOXMQIOZc8YGnRZUQWQ",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:2636/v1/enrollment/getcurses/67a985ce466d932732c3329b",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"v1",
+								"enrollment",
+								"getcurses",
+								"67a985ce466d932732c3329b"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User2",
+			"item": [
+				{
+					"name": "EditStudent",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2E5MGZkNjdkYzg5MDQzYTM0MGQyYjkiLCJuYW1lIjoiRW1pbGlvIEhlcm5hbmRleiIsInJvbGUiOiJTVFVERU5UX1JPTEUiLCJpYXQiOjE3MzkxNjA1NDksImV4cCI6MTczOTE3MTM0OX0.yPuh8CyPDlDGYlUxJaVe_LzMHMp2H3U77NdKbHjASF8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Jose Manuel",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "jmanuel@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2636/v1/user2/update/67a90fd67dc89043a340d2b9",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"v1",
+								"user2",
+								"update",
+								"67a90fd67dc89043a340d2b9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteStudent",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2E5MGZkNjdkYzg5MDQzYTM0MGQyYjkiLCJuYW1lIjoiRW1pbGlvIEhlcm5hbmRleiIsInJvbGUiOiJTVFVERU5UX1JPTEUiLCJpYXQiOjE3MzkxNjA1NDksImV4cCI6MTczOTE3MTM0OX0.yPuh8CyPDlDGYlUxJaVe_LzMHMp2H3U77NdKbHjASF8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "localhost:2636/v1/user2/delete/67a90fd67dc89043a340d2b9",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"v1",
+								"user2",
+								"delete",
+								"67a90fd67dc89043a340d2b9"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
